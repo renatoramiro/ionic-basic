@@ -35,7 +35,8 @@ angular.module('starter', ['ionic', 'starter.account.controller'])
   .state('master', {
     url: '/master',
     abstract: true,
-    templateUrl: 'templates/master.html'
+    templateUrl: 'templates/master.html',
+    controller: 'AccountCtrl'
   })
 
   .state('master.home', {
@@ -43,6 +44,7 @@ angular.module('starter', ['ionic', 'starter.account.controller'])
     views: {
       'master-home': {
         templateUrl: 'templates/home.html',
+        controller: 'AccountCtrl'
       }
     }
   })

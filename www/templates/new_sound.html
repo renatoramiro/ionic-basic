@@ -1,0 +1,13 @@
+<ion-modal-view title="">
+  <ion-header-bar align-title="center" class="bar-positive">
+    <h1 class="title">New Sound</h1>
+    <div class="buttons">
+      <button ng-click="closeModal()" class="button">Close</button>
+    </div>
+  </ion-header-bar>
+
+	<ion-content class="has-subheader padding">
+    <button class="button button-dark" ng-click="beginRecord()" ng-show="!recording"><i class="ion-mic-c"></i> Click to record</button>
+    <button class="button button-assertive" ng-click="stopRecord()" ng-show="recording"><i class="ion-mic-c"></i> Stop record</button>
+  </ion-content>
+</ion-modal-view>

@@ -1,7 +1,17 @@
-<ion-view title="Home">
-	<ion-content>
-    <p>
-      Home - Welcome
-    </p>
+<ion-view view-title="Timeline">
+  <ion-content class="padding-left">
+    <div class="list">
+      <div class="row" style="margin-top: 3px;" ng-repeat="count in list">
+        <div class="col col-10 padding-top" style="">
+          <img src="../img/ionic.png" alt="" width="40" height="40" style="border-radius: 150px; margin-top: 5px;" />
+        </div>
+        <div class="col col-offset-10 padding-top padding-left padding-right" style="border-radius: 4px; border: 1px solid #ccc">
+          <p>
+            <span style="font-size: 17px;">@ionic</span> <span style="font-size: 10px;">27min ago</span><br>
+            <a ng-href="" style="font-size: 25px;"><i class="ion ion-ios-play-outline"></i></a>
+          </p>
+        </div>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
